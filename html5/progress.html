@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript">
+    window.onload = function() {
+      setInterval(function() {
+        var p = document.getElementById("myProgress");
+        if(p.value >= 100) {
+          p.value = 0;
+        } else {
+          p.value += 10;
+        }
+      }, 1000);
+    }
+  </script>
+</head>
+
+<body>
+  <progress id="myProgress" value="0" max="100"></progress>
+</body>
+
+</html>

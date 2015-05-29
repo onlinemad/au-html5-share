@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="utf8">
+
+<body>
+  <button onclick="dialog_show()">show</button>
+  <button onclick="dialog_close()">close</button>
+  <button onclick="dialog_showModal()">showModal</button>
+  <dialog id="myDialog">歡迎光臨</dialog>
+
+  <script>
+    function dialog_show() {
+      document.getElementById("myDialog").show();
+    }
+    function dialog_close() {
+      document.getElementById("myDialog").close();
+    }
+    function dialog_showModal() {
+      document.getElementById("myDialog").showModal();
+    }
+  </script>
+</body>
+
+</html>
